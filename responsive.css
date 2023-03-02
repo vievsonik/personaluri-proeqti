@@ -1,0 +1,32 @@
+@media (max-width:770px) {
+    .h1{
+        font-size: 1.44rem;
+    }
+    
+}
+@media (max-width:512px){
+    .h1{
+        font-size: 1.10rem;
+    }
+    .inner-box{
+        max-width: 320px;
+        width: 100%;
+    }
+    .image404{
+        width: 300px;
+    }
+
+}
+@media (max-width:402px){
+    .inner-box{
+        max-width: 240px;
+        width: 100%;
+    }
+    .search-box input::placeholder {
+         font-size: 15px;
+    }
+    .image404{
+        width: 250px;
+    }
+
+}
