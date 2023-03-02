@@ -2,10 +2,19 @@ body {
   background-color: #06283d;
 }
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 170px;
 }
 .inner-box {
@@ -19,6 +28,8 @@ body {
   padding: 28px 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  -webkit-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
   transition: 0.6s ease-out;
 }
 .all-images{
@@ -27,10 +38,18 @@ body {
 }
 .search-box {
   width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .search-box input {
   color: #06283d;
@@ -39,6 +58,30 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   padding-left: 37px;
+}
+.search-box input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #06283d;
+  text-transform: capitalize;
+}
+.search-box input::-moz-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #06283d;
+  text-transform: capitalize;
+}
+.search-box input:-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #06283d;
+  text-transform: capitalize;
+}
+.search-box input::-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #06283d;
+  text-transform: capitalize;
 }
 .search-box input::placeholder {
   font-size: 20px;
@@ -55,6 +98,8 @@ body {
   border-radius: 50%;
   font-size: 22px;
   border: 0;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 .search-box button:hover {
@@ -94,24 +139,36 @@ body {
 }
 .weather-details {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
 }
 .weather-details .humidity,
 .weather-details .wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   height: 100px;
 }
 .weather-details .humidity {
   padding-left: 20px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .weather-details .wind {
   padding-left: 20px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .not-found{
   width: 100%;
@@ -133,9 +190,18 @@ body {
 
 }
 .fadeIn{
-  animation: 0.5s fadeIn forwards;
-  animation-delay: 0.5s;
+  -webkit-animation: 0.5s fadeIn forwards;
+          animation: 0.5s fadeIn forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 
+}
+@-webkit-keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+  
 }
 @keyframes fadeIn {
   to {
@@ -144,13 +210,6 @@ body {
   }
   
 }
-
-
-
-
-
-
-
 
 .image404 {
   width: 400px;

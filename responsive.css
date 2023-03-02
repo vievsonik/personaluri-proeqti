@@ -22,6 +22,18 @@
         max-width: 240px;
         width: 100%;
     }
+    .search-box input::-webkit-input-placeholder {
+         font-size: 15px;
+    }
+    .search-box input::-moz-placeholder {
+         font-size: 15px;
+    }
+    .search-box input:-ms-input-placeholder {
+         font-size: 15px;
+    }
+    .search-box input::-ms-input-placeholder {
+         font-size: 15px;
+    }
     .search-box input::placeholder {
          font-size: 15px;
     }
