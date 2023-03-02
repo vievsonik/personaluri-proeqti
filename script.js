@@ -23,9 +23,10 @@ search.addEventListener('click', () =>{
             error404.classList.add('fadeIn');
             return;
         }
-    
-        error404.style.disply = 'none';
-          error404.classList.remove('fadeIn');
+        weatherBox.style.display = 'block';
+        weatherDetails.style.display = 'block';
+        error404.style.display = 'none';
+        error404.classList.remove('fadeIn');
 
           const image = document.querySelector('.weather-box img');
           const temperature = document.querySelector('.weather-box .temperature');
@@ -45,7 +46,7 @@ search.addEventListener('click', () =>{
                 break;
 
                 case 'Clouds':
-                image.src = 'images/clouds.png';
+                image.src = 'images/cloud1.png';
                 break;
 
 
@@ -54,7 +55,7 @@ search.addEventListener('click', () =>{
                 break;
 
                 default:
-                    image.sec ='';
+                    image.src ='';
           }
 
           temperature.innerHTML = `${parseInt(json.main.temp)}<span> *C </span>`;

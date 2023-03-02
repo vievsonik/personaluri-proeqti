@@ -85,6 +85,12 @@ body {
   margin-left: 5px;
   font-size: 1.5rem;
 }
+.h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 50px;
+  color: #fff;
+}
 .weather-details {
   width: 100%;
   display: flex;
@@ -110,13 +116,11 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 50px;
-  /* scale: 0;
-  opacity: 0; */
+  scale: 0;
+  opacity: 0;
   display: none;
 }
-/* .not-found img{
-  width: 70%;
-} */
+
 .not-found p {
   color: #06283d;
   font-size: 22px;
