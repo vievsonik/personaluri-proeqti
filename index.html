@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="icon" href="images/rocket-solid.svg" > -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-box">
+        <div class="search-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" placeholder="Enter your location" />
+          <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <div class="not-found">
+          <img class="image404" src="images/404notfound.png" alt="not-found" />
+          <p>invalid location! :/</p>
+        </div>
+        <div class="weather-box">
+          <!-- <img src="" alt="" /> -->
+          <p class="temperature"></p>
+          <p class="discription"></p>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+          </div>
+          <div class="text">
+            <span></span>
+            <p>humidity</p>
+          </div>
+          <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+          </div>
+          <div class="text">
+            <span></span>
+            <p>wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
