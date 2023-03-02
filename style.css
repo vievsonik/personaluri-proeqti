@@ -72,7 +72,7 @@ body {
   margin-top: 30px;
   margin-left: -16px;
 }
-.weather-box .discription {
+.weather-box .description {
   color: #06283d;
   font-size: 22px;
   text-transform: capitalize;
@@ -124,7 +124,7 @@ body {
   opacity: 0;
 
 }
-.fade-in{
+.fadeIn{
   animation: 0.5s fadeIn forwards;
   animation-delay: 0.5s;
 
